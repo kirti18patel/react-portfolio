@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import About from './components/About';
 import Home from './components/Home';
 import Contact from './components/Contact';
@@ -9,6 +9,10 @@ import './App.css';
 
 function App() {
   const [currentCategory, setCurrentCategory] = useState('Home');
+
+  useEffect(() => {
+    document.title = `Kirti | ${currentCategory}`;
+  }, [currentCategory])
 
   const renderCategory = () => {
     switch (currentCategory) {

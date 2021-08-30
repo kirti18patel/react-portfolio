@@ -1,5 +1,18 @@
 import React from 'react';
 function About() {
+  const getCurrentDay = () =>{
+    var date = new Date();
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    return date.getDay() === (6 || 7) ? "Weekend" : weekday[date.getDay()];
+  }
+
   return (
     <section className="my-5">
         <h2>Hey there, lets know a bit more about me, </h2>
@@ -18,7 +31,7 @@ Love go explore beaty of nature, preferably hiking, for my vacation.
 Interested in the entire web spectrum and working on ambitious projects with positive people.</p>
 <p>Stay bold &
 
-Have an outstanding Saturday</p>
+Have an outstanding {getCurrentDay()}!</p>
     </section>
   );
 }
