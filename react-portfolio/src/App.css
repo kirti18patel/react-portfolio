@@ -10,9 +10,15 @@
 body{
   width: 100vw;
   height: 100vh;
-  /* color: white; */
+  color: white;
+  font-family: 'Open Sans', sans-serif;
   background-color: var(--bgcolor);
-  display: inline;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav{
@@ -26,7 +32,11 @@ nav{
   align-items: center;
 }
 
-nav .menu ul{
+.logo{
+  margin-top: 20px;
+}
+
+.menu ul{
   width: 12vw;
   text-align: center;
   font-size: 1.5rem;
@@ -34,34 +44,28 @@ nav .menu ul{
   background-color: var(--bgcolor);
 }
 
-nav .menu ul li{
+.menu ul li{
   padding: 10px;
   border-bottom: 3px solid black;
 }
 
-nav .menu a:hover{
-  color: aqua;
-}
-
-nav .menu a{
+.menu a{
   text-decoration: none;
   color: white;
   transition: 0.3s;
 }
 
-nav .logo{
-  margin-top: 20px;
+.menu a:hover{
+  color: aqua;
 }
 
-nav h1 {
+.download{
   font-size: 3rem ;
-}
-nav h1 a{
   text-decoration: none;
   color: white;
 }
 
-.tooltip .tooltiptext {
+.download .tooltiptext {
   font-size: 1rem;
   visibility: hidden;
   width: 120px;
@@ -71,12 +75,62 @@ nav h1 a{
   border-radius: 6px;
   padding: 5px 0;
 
-  /* Position the tooltip */
   position: absolute;
   transform: translate(-70%,-100%);
   z-index: 1;
 }
 
-.tooltip:hover .tooltiptext {
+.download:hover .tooltiptext {
+  transition: 1s;
   visibility: visible;
+}
+
+section{
+  width: 88vw;
+  height: 100vh;
+  padding: 5% 10%;
+}
+
+.content{
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content::before,
+.content::after{
+  content: "<h1>";
+  color: gray;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-family: 'Sacramento', cursive;
+  transform: translateX(-5%);
+}
+
+.content::after{
+  content: "</h1>";
+}
+
+.content h1{
+  font-size: 5rem;
+}
+
+.content h1 span{
+  color: #93f314;
+}
+
+.description-home{
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: lightgrey;
+}
+
+.contact-me{
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border: 2px solid aqua;
+  border-radius: 10px;
+  text-decoration: none;
+  color: aqua;
 }

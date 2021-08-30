@@ -22,7 +22,7 @@ function Nav(props) {
   </ul>
 </div>
 <div>Social media icons</div>
-<h1><a href={resume} download="resume-KirtiPatel" className="tooltip"> <i className="fa fa-download" aria-hidden="true"></i><span class="tooltiptext">Download my resume</span></a></h1>
+<h1><a href={resume} download="resume-KirtiPatel" className="download"> <i className="fa fa-download" aria-hidden="true"></i><span className="tooltiptext">Download my resume</span></a></h1>
 </nav>
   );
 }
