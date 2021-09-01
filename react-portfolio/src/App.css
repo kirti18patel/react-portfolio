@@ -191,14 +191,15 @@ section{
 .container .contact-info .box .text{
   color: white;
   margin-left: 10px;
-  /* font-weight: 300; */
-  /* display: flex;
-  font-size: 16px;
-  flex-direction: column; */
 }
 .container .contactinfo .box .text h3{
   color: rgb(21, 139, 168);
   left: 0;
+}
+
+.text a{
+  text-decoration: none;
+  color: white;
 }
 
 .contact-form{
@@ -228,7 +229,7 @@ section{
 }
 
 .contact-form input[type="submit"]{
-  width: 40%;
+  min-width: 40%;
   background:rgb(21, 139, 168);
   color: white;
   border: none;
@@ -256,9 +257,10 @@ section{
 .project{
   margin: 10px;
   width: 45%;
-  height: 300px;
+  height: 250px;
   display: inline-block;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .project img{
@@ -269,4 +271,45 @@ section{
 
 .project img:hover{
   transform: scale(1.1);
+}
+
+.modalBackdrop {
+	background: rgba(0, 0, 0, .9);
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+.modalContainer {
+	background: gray;
+	border-radius: 5px;
+	max-width: 100%;
+	margin: 50px auto;
+	padding: 15px;
+	width: 960px;
+}
+
+.modalTitle {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.modal-close-btn {
+	background: darkgray;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	padding: 10px 15px;	
+}
+
+.navActive {
+  color: aqua;
 }

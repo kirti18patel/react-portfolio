@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Modal from '../Modal';
 
 function Work() {
   const [projects] = useState([
@@ -46,8 +47,16 @@ function Work() {
     }
   ]);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const toggleModal = (project, i) => {
+    setIsModalOpen(!isModalOpen);
+  }
+
   return (
     <section className="my-5">
+      {isModalOpen && (
+        <Modal onClose={toggleModal} />
+      )}
       <div className="project-card flex-row">
         {projects.map((project, i) => (
           <div className="project" key={i}>
@@ -55,6 +64,7 @@ function Work() {
             src={require(`../../assets/${i+1}.png`).default}
             alt={project.name}
             className="img-thumbnail mx-1"
+            onClick={() => toggleModal(project, i)}
             key={i}
           />
           </div>
