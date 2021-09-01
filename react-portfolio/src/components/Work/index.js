@@ -48,13 +48,9 @@ function Work() {
 
   return (
     <section className="my-5">
-      <div className="flex-row">
+      <div className="project-card flex-row">
         {projects.map((project, i) => (
-          <div key={i}>
-          <h1>name : {project.name}</h1>
-          <h1>github link : {project.github}</h1>
-          <h1>description : {project.description}</h1>
-          <h1>deployed link : {project.deployed}</h1>
+          <div className="project" key={i}>
           <img
             src={require(`../../assets/${i+1}.png`).default}
             alt={project.name}

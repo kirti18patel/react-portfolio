@@ -243,3 +243,30 @@ section{
   box-shadow: 0 5px 5px 0 gray;
   transform: translateY(-5px);
 }
+
+.project-card{
+  padding: 10px;
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+.project{
+  margin: 10px;
+  width: 45%;
+  height: 300px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.project img{
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.project img:hover{
+  transform: scale(1.1);
+}
