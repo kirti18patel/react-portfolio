@@ -31,7 +31,7 @@ Love go explore beaty of nature, preferably hiking, for my vacation.
 Interested in the entire web spectrum and working on ambitious projects with positive people.</p>
 <p>Stay bold &
 
-Have an outstanding {getCurrentDay()}!</p>
+Have an outstanding {getCurrentDay()}! </p>
     </section>
   );
 }
