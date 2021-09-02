@@ -13,7 +13,7 @@ function Footer() {
                     <i class="fa fa-github"></i>
                 </a>
             </div>
-            <p className="footer">Designed and Developed by Kirti &#169; 2021</p>
+            <p className="footer">Designed and Developed by Kirti Patel &#169; 2021</p>
         </div>
         <div></div>
     </footer>

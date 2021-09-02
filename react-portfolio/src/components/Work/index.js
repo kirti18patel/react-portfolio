@@ -61,15 +61,17 @@ function Work() {
       )}
       <div className="project-card flex-row">
         {projects.map((project, i) => (
+          <>
           <div className="project" key={i}>
           <img
             src={require(`../../assets/${i+1}.png`).default}
             alt={project.name}
             className="img-thumbnail mx-1"
-            onClick={() => toggleModal(project, i)}
             key={i}
           />
+          <div className="overlay"onClick={() => toggleModal(project, i)}>View Project</div>
           </div>
+          </>
         ))}
       </div>
     </section>

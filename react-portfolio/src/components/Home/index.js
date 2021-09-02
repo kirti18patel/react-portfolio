@@ -2,7 +2,6 @@ import React from 'react';
 function Home() {
   return (
     <section className="my-5">
-      {/* <h1 className="">Web is fun!</h1> */}
       <div className="content">
         <h1><span>H</span>i,</h1> 
         <h1>I am <span>K</span>irti,</h1> 

@@ -15,8 +15,11 @@ function About() {
 
   return (
     <section className="my-5">
-        <h2>Hey there, lets know a bit more about me, </h2>
-<p>I am a passionate full stack developer, located in Canada. I have a serious passion in web development and creating 
+      <div className="about">
+        <h3>Hey there,</h3> 
+        <h3>lets know a bit more about me, </h3>
+      </div>
+        <p>I am a passionate full stack developer, located in Canada. I have a serious passion in web development and creating 
 intuitive, dynamic user experiences. 
 
 I have 1.5 years of experience as a developer and love working with React and other frameworks.
@@ -29,9 +32,10 @@ Strengths include creativity, teamwork, and trustworthiness. Well-organised pers
 Love go explore beaty of nature, preferably hiking, for my vacation.
 
 Interested in the entire web spectrum and working on ambitious projects with positive people.</p>
-<p>Stay bold &
-
-Have an outstanding {getCurrentDay()}! </p>
+      <div className="slogan">
+        <h3>Stay bold <span>&</span></h3>
+        <h3>Have an outstanding {getCurrentDay()}! </h3>
+      </div>
     </section>
   );
 }
