@@ -38,9 +38,8 @@ function Contact() {
                 <textarea placeholder="Type your message..."></textarea>
                 <input type="submit" name="submit" value="Send Message" id="btn"></input>
             </form>
-        </div>
+          </div>
       </div>
-
     </section>
   );
 }

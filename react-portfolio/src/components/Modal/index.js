@@ -6,20 +6,23 @@ const Modal = ({ currentProject, onClose }) => {
     return (
       <div className="modalBackdrop">
         <div className="modalContainer">
-            <h3 className="modalTitle">{name}</h3>
+            <div className="flex-space-between">
+                <h3 className="modalTitle">{name}</h3>
+                <button className="modal-close-btn" onClick={onClose} type="button">x</button>
+            </div>
             <div className="project-info">
                 <div className="project-img">
-                    <img src={require(`../../assets/${index+1}.png`).default} alt="current category" />
+                    <a href={deployed}>
+                        <img src={require(`../../assets/${index+1}.png`).default} alt="current category" />
+                    </a>
                 </div>
                 <div className="project-description">
                     <p>{description}</p>
                     <div className="project-links">
-                        <a href={github}>Github Repository Link</a>
-                        <a href={deployed}>Live URL</a>
+                        <a href={github}><i class="fa fa-github"></i> Source Code</a>
                     </div>
                 </div>
             </div>
-            <button className="modal-close-btn" onClick={onClose} type="button">Close this modal</button>
         </div>
       </div>
     );

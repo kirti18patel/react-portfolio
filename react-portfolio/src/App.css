@@ -70,6 +70,7 @@ nav{
   font-size: 3rem ;
   text-decoration: none;
   color: white;
+  z-index: 10;
 }
 
 .download .tooltiptext {
@@ -151,6 +152,9 @@ section{
   color: aqua;
 }
 
+.contact-me:hover{
+  box-shadow: 0px 0px 10px aqua;
+}
 .contactContent{
   max-width: 800px;
   text-align: center;
@@ -313,7 +317,6 @@ section{
 .modalTitle {
 	font-size: 1.5rem;
 	font-weight: 600;
-	margin-bottom: 25px;
 }
 
 .project-info{
@@ -350,69 +353,59 @@ section{
   font-size: 1.3rem;
 }
 
-.project-links{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .project-links a{
   text-decoration: none;
-  background-color: black;
-  padding: 10px 15px;
-  color: greenyellow;
-  border: 2px solid greenyellow;
+  font-size: 1.2rem;
+  background-color: transparent;
+  padding: 5px 10px;
+  color: black;
   border-radius: 10px;
+}
+
+.project-links a:hover{
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
 }
 
 .modal-close-btn {
 	background: darkgray;
-	border: 0;
-	border-radius: 5px;
+  outline: none;
+  border: 0;
+	border-radius: 50%;
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;
-  min-width: 25%;
+	padding: 5px 10px;
 }
 
+.flex-space-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .navActive {
   color: aqua;
 }
 
 /* social media icons styling */
-.social-icons{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  list-style: none;
-  z-index: 100000;
-}
-.icons{
-  text-align: left;
-  display: block;
-  margin: 4px 0;
-  border-radius: 50% 0 0 50%;
-  opacity: 0.7;
-  box-shadow: 5px 5px 10px gray;
-  transition: 0.5s;
-  
-}
-.icons:hover{
-  transform: translateY(-3px);
-  opacity: 1;
-}
-.fa{
+.social-icons .fa{
   font-size: 1.5em;
   color: white;
   padding: 15px 10px 15px 15px; 
+  transition: 0.3s;
 }
-/* theme color to each social-icon */
-.linkedin{
-  background: #2867B2;
+.social-icons .fa:hover{
+  transform: translateY(-3px) scale(1.1);
 }
-.github{
-  background: black;
+
+footer{
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  color: white;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
