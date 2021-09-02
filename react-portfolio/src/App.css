@@ -21,13 +21,6 @@ body{
   align-items: center;
 }
 
-/* .sticky {
-  position: fixed;
-  left: 0;
-  height: 100vh;
-  width: 12vw;
-} */
-
 nav{
   width: 12vw;
   height: 100vh;
@@ -70,7 +63,6 @@ nav{
   font-size: 3rem ;
   text-decoration: none;
   color: white;
-  z-index: 10;
 }
 
 .download .tooltiptext {
@@ -304,14 +296,13 @@ section{
 .modalContainer {
 	background: gray;
 	border-radius: 5px;
-	max-width: 100%;
+	width: 100%;
 	margin: 50px auto;
 	padding: 20px;
 	width: 960px;
-  height: 400px;
+  height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .modalTitle {
@@ -321,8 +312,11 @@ section{
 
 .project-info{
   width: 100%;
+  height: 100%;
+  margin-right: 20px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -333,19 +327,48 @@ section{
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  margin: 20px;
 }
 
-.project-img img{
+.project-info:hover .project-img a{
+  transform: translateY(-50px) scale(0.4);
+}
+
+.project-info:hover .project-description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.project-img a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-img a img{
   width: 100%;
   height: 100%;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .project-description{
+  width: 60%;
+  height: 100%;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: none;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(-80px);
+  transition-delay: 0.3s;
+  text-align: center;
 }
 
 .project-description p{
@@ -354,6 +377,7 @@ section{
 }
 
 .project-links a{
+  margin: 20px;
   text-decoration: none;
   font-size: 1.2rem;
   background-color: transparent;
@@ -367,7 +391,7 @@ section{
 }
 
 .modal-close-btn {
-	background: darkgray;
+  background-color: transparent;
   outline: none;
   border: 0;
 	border-radius: 50%;
@@ -375,8 +399,13 @@ section{
 	cursor: pointer;
 	font-size: 16px;
 	padding: 5px 10px;
+  transition: 0.3s;
 }
 
+.modal-close-btn:hover{
+	background: darkgray;
+  transform: translateY(-3px);
+}
 .flex-space-between{
   display: flex;
   justify-content: space-between;
@@ -398,14 +427,20 @@ section{
 }
 
 footer{
+  padding: 0 5%;
   position: absolute;
   width: 100%;
   height: 10vh;
   color: white;
   bottom: 0px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center{
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2;
 }

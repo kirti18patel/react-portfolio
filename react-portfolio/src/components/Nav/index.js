@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
-import resume from '../../assets/resume.docx';
 
 function Nav(props) {
     const menu = ['About', 'Skills', 'Work', 'Contact']
@@ -21,8 +20,8 @@ function Nav(props) {
                 }
             </ul>
           </div>
-          <h1><a href={resume} download="resume-KirtiPatel" className="download"> <i className="fa fa-download" aria-hidden="true"></i><span className="tooltiptext">Download my resume</span></a></h1>
-      </nav>
+          <div></div>
+          </nav>
   );
 }
 

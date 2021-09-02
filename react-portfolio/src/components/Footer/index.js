@@ -1,16 +1,21 @@
 import React from 'react';
+import resume from '../../assets/resume.docx';
 function Footer() {
   return (
     <footer className="my-5">
-        <div className="social">
-            <a href="https://linkedin.com/in/kirtipatel18" className="social-icons">
-                <i class="fa fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/kirti18patel" className="social-icons">
-                <i class="fa fa-github"></i>
-            </a>
+        <h1><a href={resume} download="resume-KirtiPatel" className="download"> <i className="fa fa-download" aria-hidden="true"></i><span className="tooltiptext">Download my resume</span></a></h1>
+        <div className="flex-center">
+            <div className="social">
+                <a href="https://linkedin.com/in/kirtipatel18" className="social-icons">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/kirti18patel" className="social-icons">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
+            <p className="footer">Designed and Developed by Kirti &#169; 2021</p>
         </div>
-        <p className="footer">Designed and Developed by Kirti &#169; 2021</p>
+        <div></div>
     </footer>
   );
 }
