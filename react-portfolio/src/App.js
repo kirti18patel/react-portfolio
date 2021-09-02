@@ -31,6 +31,14 @@ function App() {
 
   return (
     <>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/kirtipatel18 " class="icons linkedin">
+            <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/kirti18patel" class="icons github">
+            <i class="fa fa-github"></i>
+        </a>
+    </div>
     <Nav currentCategory={currentCategory} setCurrentCategory={setCurrentCategory}/>
     {renderCategory(currentCategory)}
     </>
