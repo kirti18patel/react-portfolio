@@ -47,15 +47,17 @@ function Work() {
     }
   ]);
 
+  const [currentProject, setCurrentProject] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = (project, i) => {
+    setCurrentProject({...project, index: i});
     setIsModalOpen(!isModalOpen);
   }
 
   return (
-    <section className="my-5">
+    <section className="my-5 work">
       {isModalOpen && (
-        <Modal onClose={toggleModal} />
+        <Modal currentProject={currentProject} onClose={toggleModal} />
       )}
       <div className="project-card flex-row">
         {projects.map((project, i) => (
