@@ -32,6 +32,15 @@ function App() {
 
   return (
     <>
+    <div class="dots">
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>      
+      <h1>.</h1>
+      <h1>.</h1>
+      <h1>.</h1>
+    </div>
     <Nav currentCategory={currentCategory} setCurrentCategory={setCurrentCategory}/>
     {renderCategory(currentCategory)}
     <Footer />
