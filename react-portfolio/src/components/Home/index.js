@@ -11,8 +11,8 @@ function Home() {
       <div className="description-home">
         <p>I write code and improve my skills every day. I am honored to work with special people and looking forward to meet ambitious people ahead.</p>
       </div>
-      <a href="mailto:kirti18patel@yahoo.com" className="contact-me">Contact Me!</a>
-    </section>
+      <a href="mailto:kirti18patel@yahoo.com" className="contact-me"><span></span>Contact Me!</a>
+      </section>
   );
 }
 

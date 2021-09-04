@@ -18,9 +18,7 @@ const Modal = ({ currentProject, onClose }) => {
                 </div>
                 <div className="project-description">
                     <p>{description}</p>
-                    <div className="project-links">
-                        <a href={github}><i class="fa fa-github"></i> Source Code</a>
-                    </div>
+                    <a href={github} className="repo-link"><span></span><i class="fa fa-github"></i> Source Code</a>
                 </div>
             </div>
         </div>
