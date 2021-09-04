@@ -4,7 +4,7 @@ function Contact() {
     <section className="flex-center-column my-5">
       <div className="contactContent">
         <h2>Contact Me</h2>
-        <p>I am intrested in web development opportunities. If you have other question or want to discuss more about, don't hesitate to reach me.</p>
+        <p>I am intrested in web development opportunities. If you have any question or want to discuss more about, don't hesitate to reach me.</p>
       </div>
       <div className="container">
       <div className="contact-info">

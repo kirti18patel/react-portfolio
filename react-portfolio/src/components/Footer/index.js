@@ -6,6 +6,7 @@ function Footer() {
         <h1><a href={resume} download="resume-KirtiPatel" className="download"> <i className="fa fa-download" aria-hidden="true"></i><span className="tooltiptext">Download my resume</span></a></h1>
         <div className="flex-center">
             <div className="social">
+                <h3>Lets be internet BFF's</h3>
                 <a href="https://linkedin.com/in/kirtipatel18" className="social-icons">
                     <i class="fa fa-linkedin"></i>
                 </a>

@@ -89,7 +89,6 @@ section{
   width: 88vw;
   height: 100vh;
   padding: 5% 10%;
-  /* background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),url("./assets/sunrise.jpg")); */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -199,7 +198,7 @@ section{
 .container{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: 50px;
 }
@@ -460,6 +459,11 @@ section{
   transform: translateY(-3px) scale(1.1);
 }
 
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 footer{
   padding: 0 5%;
   position: absolute;
@@ -559,4 +563,52 @@ footer{
   bottom: -100px;
   position: absolute;
   color: white;
+  }
+
+  .skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .skills-description{
+    width: 45%;
+    height: 100%;
+  }
+
+  .skills-description h3{
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .skills-description h3 span{
+    color: #93f314;
+  }
+
+  .skills-description p{
+    font-size: 1.1rem;
+  }
+
+  .skills-description p a{
+    text-decoration: none;
+    color: #93f314;
+  }
+
+  .skills-description p a:hover{
+    text-decoration: underline;
+  }
+
+  .skill-icon{
+    padding: 0px 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .skill-icon img{
+    width: 150px;
+    height:150px;
+    padding: 10px;
   }
