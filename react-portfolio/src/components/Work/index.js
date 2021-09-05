@@ -54,10 +54,15 @@ function Work() {
     setIsModalOpen(!isModalOpen);
   }
 
+  const closeModal = (event) => {
+    console.log(event.target)
+    setIsModalOpen(!isModalOpen);
+  }
+
   return (
     <section className="my-5 work">
       {isModalOpen && (
-        <Modal currentProject={currentProject} onClose={toggleModal} />
+        <Modal currentProject={currentProject} onClose={closeModal} />
       )}
       <div className="project-card flex-around-center">
         {projects.map((project, i) => (
