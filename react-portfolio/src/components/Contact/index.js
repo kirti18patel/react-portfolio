@@ -2,31 +2,31 @@ import React from 'react';
 function Contact() {
   return (
     <section className="flex-center-column my-5">
-      <div className="contactContent">
+      <div className="contactContent text-center">
         <h2>Contact Me</h2>
         <p>I am intrested in web development opportunities. If you have any question or want to discuss more about, don't hesitate to reach me.</p>
       </div>
-      <div className="container">
+      <div className="container flex-around-center">
       <div className="contact-info">
                 <div className="box">
-                    <div className="icon"><i className="fa fa-map-marker"></i></div>
+                    <div className="icon flex-around-center"><i className="fa fa-map-marker"></i></div>
                     <div className="text">
                         <h3>ADDRESS</h3>
                         <p>Montreal, QC, CA H3N 2V7</p>
                     </div>
                 </div>
                 <div className="box">
-                    <div className="icon"><i className="fa fa-phone"></i></div>
+                    <div className="icon flex-around-center"><i className="fa fa-phone"></i></div>
                     <div className="text">
                         <h3>Phone</h3>
                         <p>+1 5145748186</p>
                     </div>
                 </div>
                 <div className="box">
-                    <div className="icon"><i className="fa fa-envelope"></i></div>
+                    <div className="icon flex-around-center"><i className="fa fa-envelope"></i></div>
                     <div className="text">
                         <h3>Email</h3>
-                        <a href="mailto:kirti18patel@yahoo.com">kirti18patel@yahoo.com</a>
+                        <a href="mailto:kirti18patel@yahoo.com" className="decoration-none-white">kirti18patel@yahoo.com</a>
                     </div>
                 </div>
             </div>

@@ -59,7 +59,7 @@ function Work() {
       {isModalOpen && (
         <Modal currentProject={currentProject} onClose={toggleModal} />
       )}
-      <div className="project-card flex-row">
+      <div className="project-card flex-around-center">
         {projects.map((project, i) => (
           <>
           <div className="project" key={i}>
@@ -69,7 +69,7 @@ function Work() {
             className="img-thumbnail mx-1"
             key={i}
           />
-          <div className="overlay"onClick={() => toggleModal(project, i)}>View Project</div>
+          <div className="overlay flex-center"onClick={() => toggleModal(project, i)}>View Project</div>
           </div>
           </>
         ))}

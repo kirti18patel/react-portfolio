@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-    <div class="dots">
+    <div className="dots">
       <h1>.</h1>
       <h1>.</h1>
       <h1>.</h1>
