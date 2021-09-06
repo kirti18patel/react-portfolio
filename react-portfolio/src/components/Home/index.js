@@ -2,7 +2,7 @@ import React from 'react';
 import background from "../../assets/perce-rock.jpg";
 function Home() {
   return (
-    <section className="my-5" style={{ backgroundImage: `url(${background})` }}>
+    <section className="my-5 home" style={{ backgroundImage: `url(${background})` }}>
       <div className="content">
         <h1><span>H</span>i,</h1> 
         <h1>I am <span>K</span>irti,</h1> 

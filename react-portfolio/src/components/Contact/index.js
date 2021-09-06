@@ -1,7 +1,7 @@
 import React from 'react';
 function Contact() {
   return (
-    <section className="flex-center-column my-5">
+    <section className="contact flex-center-column my-5">
       <div className="contactContent text-center">
         <h2>Contact Me</h2>
         <p>I am intrested in web development opportunities. If you have any question or want to discuss more about, don't hesitate to reach me.</p>

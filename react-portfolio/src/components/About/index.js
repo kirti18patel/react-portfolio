@@ -10,7 +10,7 @@ function About() {
     weekday[4] = "Thursday";
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
-    return date.getDay() === (6 || 7) ? "Weekend" : weekday[date.getDay()];
+    return date.getDay() === (6 || 0) ? "Weekend" : weekday[date.getDay()];
   }
 
   return (

@@ -40,7 +40,7 @@ function Skills() {
     ]
   );
   return (
-    <section className="my-5 skills">
+    <section className="my-5 skills flex-space-between">
         <div className="skills-description">
           <h3>Skills <span>&</span> Experiences</h3>
           <p>I started my professional journey in web development with startups, and collaborated with talented people to create web products with creative and smart thinking. 

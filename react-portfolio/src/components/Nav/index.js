@@ -21,7 +21,7 @@ function Nav(props) {
                 }
             </ul>
           </div>
-          <div></div>
+          <div className="empty"></div>
           </nav>
   );
 }
